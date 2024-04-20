@@ -1,0 +1,41 @@
+html{
+    font-size: 10px;
+    background: rgba(0,0,0,.85) no-repeat;
+}
+body{
+    font-size: 10em;
+    margin: 0;
+    padding: 0;
+}
+.react-logo{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(-50%);
+    width: 2em;
+    height: 0.5em;
+    border: 0.1em solid #61dafb;
+    background: radial-gradient(circle, #61dafb 48%, transparent 50%) 
+    no-repeat center center;
+    background-size: 0.5em 100%;
+    border-radius: 50%;
+}
+.react-logo::before, .react-logo::after{
+    content: "";
+    position: absolute;
+    top: -0.1em;
+    border-radius: 50%;
+    border: 0.1em solid #61dafb;
+    width: 2em;
+    height: 0.5em;
+}
+.react-logo::before{
+    left: -0.1em;
+    transform: rotate(60deg);
+}
+.react-logo::after{
+    right: -0.1em;
+    transform: rotate(-60deg);
+}
